@@ -1,19 +1,20 @@
 {
 
   "manifest_version": 2,
-  "name": "Borderify",
-  "version": "1.0",
+  "name": "inShorts in dark",
+  "version": "0.1",
 
-  "description": "Adds a solid red border to all webpages matching mozilla.org.",
+  "description": "Read your favourite news on inShorts by dimming the light right away on your browser.",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/border-48.png",
+    "96": "icons/border-96.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["borderify.js"]
+      "matches": ["https://www.inshorts.com/en/read"],
+      "js": ["script.js"]
     }
   ]
 
