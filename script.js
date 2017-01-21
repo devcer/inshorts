@@ -23,3 +23,5 @@ for (var i = 0; i < divLen; i++){
 var loadMoreButton=doc.getElementById("load-more-btn");
 loadMoreButton.style.backgroundColor="red";
 loadMoreButton.style.color="white";
+
+//todo: new news loaded should also have the style effects
