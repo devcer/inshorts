@@ -35,11 +35,11 @@ function makeLoadmoreButtonRedAgain(){
 	loadMoreButton.style.backgroundColor="red";
 	loadMoreButton.style.color="white";
 }
-function changeBackground(){
-	console.log("clicked");
-	doc.body.style.backgroundColor="white";
-}
-//browser.browserAction.onClicked.addListener(changeBackground);
+// function changeBackground(){
+// 	console.log("changeBackground");
+// 	doc.body.style.backgroundColor="white";
+// }
+
 makeLinksWhiteAgain();
 makeLoadmoreButtonRedAgain();
 makeHeadlinesWhiteAgain();
@@ -56,3 +56,9 @@ function onDocumentChange(){
 	makeHeadlinesWhiteAgain();
 	makeNewsWhiteAgain();
 }
+
+function changeBackground(tab){
+	console.log("clicked");
+		document.body.style.backgroundColor="white";
+}
+browser.browserAction.onClicked.addListener(changeBackground);

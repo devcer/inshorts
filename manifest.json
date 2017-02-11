@@ -14,9 +14,21 @@
     "activeTab",
     "tabs"
   ],
+  "page_action": {
+  "browser_style": true,
+    "default_icon": {
+      "19": "icons/icon-19.png",
+      "38": "icons/icon-38.png"
+    },
+  "default_title": "Whereami?"
+  },
   "browser_action": {
-    "default_icon": "icons/icon-32.png",
-    "default_title": "On or Off"
+  "browser_style": true,
+    "default_icon": {
+      "19": "icons/icon-19.png",
+      "38": "icons/icon-38.png"
+    },
+  "default_title": "Whereami?"
   },
   "background": {
     "scripts": ["background.js"]
@@ -26,7 +38,5 @@
       "matches": ["https://www.inshorts.com/en/read"],
       "js": ["script.js"]
     }
-  ],
-  "web_accessible_resources": [
   ]
 }
