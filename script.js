@@ -1,16 +1,6 @@
 var doc=document;
 doc.body.style.backgroundColor="black";
 
-
-function makeLinksWhiteAgain(){
-	console.log("makeLinksWhiteAgain");
-	var links=doc.getElementsByClassName("action_links");
-	var len=links.length
-	for (var i = 0; i < len; i++){
-		links[i].firstChild.style.color="white";
-	}
-}
-
 function makeHeadlinesWhiteAgain(){
 	var spanTags=doc.getElementsByTagName("span");
 	var spanLen=spanTags.length;
@@ -35,12 +25,7 @@ function makeLoadmoreButtonRedAgain(){
 	loadMoreButton.style.backgroundColor="red";
 	loadMoreButton.style.color="white";
 }
-// function changeBackground(){
-// 	console.log("changeBackground");
-// 	doc.body.style.backgroundColor="white";
-// }
 
-makeLinksWhiteAgain();
 makeLoadmoreButtonRedAgain();
 makeHeadlinesWhiteAgain();
 makeNewsWhiteAgain();
@@ -52,13 +37,6 @@ var docu = doc.querySelector("div.card-stack");
 observer.observe(docu, config);
 
 function onDocumentChange(){
-	console.log("onDocumentChange");
 	makeHeadlinesWhiteAgain();
 	makeNewsWhiteAgain();
 }
-
-function changeBackground(tab){
-	console.log("clicked");
-		document.body.style.backgroundColor="white";
-}
-browser.browserAction.onClicked.addListener(changeBackground);
