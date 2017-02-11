@@ -16,11 +16,11 @@
   ],
   "browser_action": {
   "browser_style": true,
-    "default_icon": {
-      "19": "icons/icon-19.png",
-      "38": "icons/icon-38.png"
-    },
-  "default_title": "Whereami?"
+  "default_icon": {
+    "19": "icons/icon-19.png",
+    "38": "icons/icon-38.png"
+  },
+  "default_title": "Turn on or off"
   },
   "background": {
     "scripts": ["background.js"]
