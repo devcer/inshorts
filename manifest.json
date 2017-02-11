@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "inShorts in dark",
-  "version": "0.1",
+  "version": "2.0.0",
   "homepage_url": "https://github.com/viswanathamsantosh/inshorts",
   "description": "Read your favourite news on inShorts by dimming the light right away on your browser.",
 
@@ -14,14 +14,6 @@
     "activeTab",
     "tabs"
   ],
-  "page_action": {
-  "browser_style": true,
-    "default_icon": {
-      "19": "icons/icon-19.png",
-      "38": "icons/icon-38.png"
-    },
-  "default_title": "Whereami?"
-  },
   "browser_action": {
   "browser_style": true,
     "default_icon": {
@@ -32,11 +24,5 @@
   },
   "background": {
     "scripts": ["background.js"]
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://www.inshorts.com/en/read"],
-      "js": ["script.js"]
-    }
-  ]
+  }
 }
