@@ -23,10 +23,12 @@ function toggleNightMode(tab){
 	}
 }
 
+//when the browser tab is refreshed
 browser.tabs.onUpdated.addListener((id, changeInfo, tab) => {
 	if(tab.url.indexOf("www.inshorts.com/en/read")!=-1){
 		disableNightMode();
 	}
 });
 
+//event handler when you click the button in the toolbar
 browser.browserAction.onClicked.addListener(toggleNightMode);
