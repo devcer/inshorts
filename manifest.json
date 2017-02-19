@@ -1,8 +1,7 @@
 {
-
   "manifest_version": 2,
   "name": "inShorts in dark",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage_url": "https://github.com/viswanathamsantosh/inshorts",
   "description": "Read your favourite news on inShorts by dimming the light right away on your browser.",
 
