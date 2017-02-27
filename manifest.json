@@ -13,7 +13,7 @@
     "activeTab",
     "tabs"
   ],
-  "browser_action": {
+  "page_action": {
   "browser_style": true,
   "default_icon": {
     "19": "icons/icon-19.png",
